@@ -1,0 +1,29 @@
+.signup-content{ 
+    form {
+        display:grid;
+    grid-template-columns:1fr 1fr;
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+    input,button{
+        padding:10px;
+        border:1px solid #4c4545;
+        border-radius:3px;
+        margin-bottom:15px;
+        font-size: .86em;
+    }
+    input:active,input:focus{
+        outline:1px solid #ff9800;
+    }
+    button{
+        padding: 10px;
+        background-color: #00c0f4;
+        color: white;
+        font-weight: 600;
+    }
+    button:hover{
+        cursor:pointer;
+        transform: scale(1.03);
+        background-color: #18ba00;
+    }
+    }
+}

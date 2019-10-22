@@ -1,0 +1,73 @@
+/* Mobile (portrait and landscape) */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+/* Styles */
+}
+
+/* Mobile (landscape) */
+@media only screen 
+and (max-width : 569px) {
+/* Styles */
+    .product-wrapper form{
+        padding:20px;
+        display:unset !important;
+    }
+
+}
+
+/* Mobile (portrait)*/
+@media only screen 
+and (max-width : 422px) {
+    .result-container{
+        grid-template-columns: 1fr !important;
+    }
+    
+    .popup-wrapper .popup-card .popup-content{
+        grid-template-columns: 1fr;
+    }
+    .product-wrapper form{
+        display:unset !important;
+        grid-template-columns: 1fr !important;
+    }
+    .signup-content form{
+        display:flex !important;
+        flex-direction: column;
+    }
+/* Styles */
+}
+
+/* Tablets (portrait and landscape) */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+/* Styles */
+}
+
+/* Tablets (landscape) */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+/* Styles */
+}
+
+/* Tablets (portrait) */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+/* Styles */
+}
+
+/* Desktop and laptops */
+@media only screen 
+and (min-width : 1224px) {
+/* Styles */
+}
+
+/* Large screens */
+@media only screen 
+and (min-width : 1824px) {
+/* Styles */
+}

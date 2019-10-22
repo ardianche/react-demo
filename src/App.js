@@ -1,28 +1,29 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import WelcomeView from './views/welcome/WelcomeView';
+import AddProduct from './views/products/AddProduct';
+import LoginPage from './views/users/LoginPage';
+import SignUpPage from './views/users/SignUpPage';
+import {BrowserRouter, Redirect,Route,Switch} from "react-router-dom";
+import '../src/assets/styles/App.css';
+import '../src/assets/styles/scss/responsiveness.scss';
+
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        <BrowserRouter>
+          <Switch>
+            <Route exact path="/" component={WelcomeView}/>
+            <Route path="/add" component={AddProduct}/>
+            <Route path="/login" component={LoginPage}/>
+            <Route path="/sign-up" component={SignUpPage}/>
+          </Switch>
+        </BrowserRouter>
       </div>
-    );
+    )
   }
+
 }
 
 export default App;
